@@ -1,0 +1,102 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #f5f7fa;
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 0;
+  color: #666666;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d5d9df;
+  border-radius: 10px;
+  outline: none;
+  background: #ffffff;
+}
+
+.form input:focus {
+  border-color: #111111;
+}
+
+.form button {
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 16px;
+  background: #111111;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 14px;
+}
+
+.forgot a {
+  text-decoration: underline;
+}
+
+.error {
+  padding: 12px;
+  border-radius: 10px;
+  background: #fff1f1;
+  color: #b42318;
+  font-size: 14px;
+}
+
+.footer {
+  margin: 22px 0 0;
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+}
+
+.footer a {
+  font-weight: 600;
+  text-decoration: underline;
+  }
