@@ -1,0 +1,154 @@
+.page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 0;
+}
+
+.chat {
+  width: 100%;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 18px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.header p {
+  margin: 4px 0 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.messages {
+  flex: 1;
+  padding: 24px 18px;
+  overflow-y: auto;
+}
+
+.empty {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.empty h2 {
+  margin: 0 0 8px;
+}
+
+.empty p {
+  margin: 0;
+  color: #666666;
+}
+
+.message {
+  margin-bottom: 18px;
+  max-width: 85%;
+}
+
+.userMessage {
+  margin-left: auto;
+}
+
+.assistantMessage {
+  margin-right: auto;
+}
+
+.messageRole {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.messageContent {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+.userMessage .messageContent {
+  background: #111111;
+  color: #ffffff;
+}
+
+.assistantMessage .messageContent {
+  background: #f0f2f5;
+  color: #111111;
+}
+
+.composer {
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.composer form {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.composer textarea {
+  flex: 1;
+  resize: none;
+  border: 1px solid #d5d9df;
+  border-radius: 12px;
+  padding: 12px;
+  outline: none;
+}
+
+.composer textarea:focus {
+  border-color: #111111;
+}
+
+.composer button {
+  min-width: 75px;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: #111111;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.composer button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fff1f1;
+  color: #b42318;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .message {
+    max-width: 92%;
+  }
+
+  .composer form {
+    align-items: stretch;
+  }
+
+  .composer button {
+    min-width: 65px;
+  }
+  }
